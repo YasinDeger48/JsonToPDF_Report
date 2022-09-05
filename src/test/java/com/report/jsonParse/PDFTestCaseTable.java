@@ -11,6 +11,9 @@ import com.report.model.Element;
 import com.report.model.Result;
 import com.report.model.Root;
 import com.report.model.Step;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.general.DefaultPieDataset;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -91,6 +94,7 @@ public class PDFTestCaseTable {
                 table.addCell(arg3);
 
             }
+
             doc.add(table);
 
         } catch (DocumentException e) {
